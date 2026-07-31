@@ -1,7 +1,26 @@
 aid: molg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/molg.png
 name: MOLG
-description: MOLG is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: MOLG (molg.ai) is a circular manufacturing company tackling electronic
+  waste. It operates autonomous robotic microfactories that disassemble complex devices
+  like laptops and servers to recover components and materials for reuse, remanufacturing,
+  and recycling. MOLG also partners with manufacturers on design-for-circularity (modular
+  snap/press-fit/latch assembly instead of screws and adhesives) and offers OriginMark,
+  a traceability platform for tracking devices, components, and materials across their
+  lifecycle to calculate embodied carbon and supply-chain transparency. As of this
+  enrichment pass MOLG publishes no public API, developer portal, SDK, or technical
+  documentation; this profile captures its identity and domain-security posture.
 url: https://raw.githubusercontent.com/api-evangelist/molg/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Circular Manufacturing
+- E-Waste
+- Robotics
+- Recycling
+- Sustainability
+- Traceability
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/molg-domain-security.yml
 - type: Website
   url: https://molg.ai/
+- type: Support
+  url: https://molg.ai/contact
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
